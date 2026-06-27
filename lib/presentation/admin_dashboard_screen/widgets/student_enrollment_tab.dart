@@ -402,7 +402,7 @@ class _StudentEnrollmentTabState extends State<StudentEnrollmentTab> {
 
   Future<void> _importStudentsFromCsv() async {
     try {
-      final result = await FilePicker.platform.pickFiles(
+      final result = await FilePicker.instance.pickFiles(
         type: FileType.custom,
         allowedExtensions: ['csv'],
       );
